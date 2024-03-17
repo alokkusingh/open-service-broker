@@ -7,7 +7,7 @@ metadata:
     app: home-osb-service
     namespace: osb-stack
 spec:
-  url: http://home-osb-service.test-stack.svc.cluster.local
+  url: http://home-osb-service.osb-stack.svc.cluster.local
   authInfo:
     basic:
       secretRef:
