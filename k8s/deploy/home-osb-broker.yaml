@@ -1,0 +1,15 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ClusterServiceBroker
+metadata:
+  name: home-osb-broker
+  namespace: osb-stack
+  labels:
+    app: home-osb-service
+    namespace: osb-stack
+spec:
+  url: http://home-osb-service.test-stack.svc.cluster.local
+  authInfo:
+    basic:
+      secretRef:
+        name: home-osb-broker-secret
+        namespace: osb-stack

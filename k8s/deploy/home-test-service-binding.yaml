@@ -1,0 +1,11 @@
+apiVersion: servicecatalog.k8s.io/v1beta1
+kind: ServiceBinding
+metadata:
+  name: mail-binding
+  namespace: test-stack
+  labels:
+    app: home-osb-broker
+    namespace: osb-stack
+spec:
+  instanceRef:
+    name: mail-instance

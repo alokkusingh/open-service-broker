@@ -1,0 +1,47 @@
+server:
+#  servlet:
+#    context-path: /home/osb
+  port: 8081
+
+spring:
+  cloud:
+    openservicebroker:
+      base-path: /broker
+      apiVersion: 2
+#      catalog:
+#        services:
+#          - id: example-service
+#            name: example
+#            description: A simple example
+#            bindable: true
+#            tags:
+#              - example
+#              - tags
+#            plans:
+#              - id: simple-plan
+#                name: standard
+#                description: A simple plan
+
+
+
+mail:
+  system:
+    base-url: http://jgte/osb/mail-system/
+    dashboard:
+      base-url: http://jgte/osb/mail-dashboard/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+      show-details: always
+
+debug: true
+

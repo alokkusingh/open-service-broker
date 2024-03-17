@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: "test-stack"
+  labels:
+    name: "test-stack"
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: "osb-stack"
+  labels:
+    name: "osb-stack"
